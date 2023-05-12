@@ -10,14 +10,15 @@ import utilidades.ES;
 /**
  *
  * @author felipe Juego LIGHTS OUT
+ * @version 1
  */
 public class Principal {
-
-    /**
-     * @param args the command line arguments
-     */
     private static boolean[][] tablero;
 
+    /**
+     * Método principal del juego
+     * @param args argumentos de linea de comandos. <strong>No se utilizan</strong>
+     */
     public static void main(String[] args) {
         int opcion;
         do {
@@ -103,7 +104,7 @@ public class Principal {
     /**
      * Comprueba si todas la luces del tablero están apagadas
      *
-     * @return true si están todas apagadas; false en caso contrario.
+     * @return <em>true</em> si están todas apagadas; <em>false</em> en caso contrario.
      */
     private static boolean comprobarTodasApagadas() {
         boolean encontradaEncendida = false;
@@ -142,8 +143,8 @@ public class Principal {
     /**
      * Jugar una partida
      *
-     * @param tipo Puede ser false o true, según el tipo de partida false
-     * significa aleatorio true significa por niveles
+     * @param tipo Puede ser <em>false</em> o <em>true</em>, según el tipo de partida <em>false</em>
+     * significa aleatorio <em>true</em> significa por niveles
      */
     private static void jugar(boolean tipo) {
         int jugadasRestantes;

@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class ES {
     /**
      * Lee un entero desde el teclado
-     * @return 
+     * @return el entero leído
      */
     public static int leerEntero(){
     Scanner teclado = new Scanner(System.in);
@@ -31,9 +31,9 @@ public class ES {
     }
     
     /**
-     * Lee un entero desde el teclado, presentando previamente un mensaje
+     * Lee un entero desde el teclado, presentando <strong>previamente</strong> un mensaje
      * @param mensaje
-     * @return 
+     * @return el entero leído
      */
     public static int leerEntero(String mensaje){
         escribir(mensaje);
@@ -46,7 +46,7 @@ public class ES {
      *
      * @param minimo
      * @param maximo
-     * @return
+     * @return el entero leído
      */
     public static int leerEntero(int minimo, int maximo) {
         int valor;
@@ -68,7 +68,7 @@ public class ES {
      * @param minimo
      * @param maximo
      * @param mensaje
-     * @return
+     * @return el entero leído
      */
     public static int leerEntero(int minimo, int maximo, String mensaje) {
         escribir(mensaje);
@@ -77,10 +77,10 @@ public class ES {
     }
 
     /**
-     * Presenta un mensaje y pide una respuesta de sí o no
+     * Presenta un mensaje y pide una respuesta de <strong>sí o no</strong>
      *
      * @param mensaje
-     * @return true si ha respondido sí, o false si ha respondido no
+     * @return <em>true</em> si ha respondido sí, o <em>false</em> si ha respondido no
      */
     public static boolean leerSiNo(String mensaje) {
         Scanner teclado = new Scanner(System.in);
@@ -104,7 +104,7 @@ public class ES {
     }
 
     /**
-     * Escribe una cadena de texto sin salto de línea
+     * Escribe una cadena de texto <strong>sin</strong> salto de línea
      *
      * @param mensaje
      */
@@ -122,7 +122,7 @@ public class ES {
     }
 
     /**
-     * Escribe una cadena de texto con salto de línea
+     * Escribe una cadena de texto <strong>con</Strong> salto de línea
      *
      * @param mensaje
      */
